@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/paper_texture" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/randomRecipeHeader"
+            style="@style/HeaderStyle"
+            android:text="Losowy Przepis" />
+
+        <!-- Nazwa przepisu -->
+        <TextView
+            android:id="@+id/randomRecipeNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="16dp" />
+
+
+
+        <!-- Nagłówek składników -->
+        <TextView
+            android:id="@+id/randomRecipeIngredientsHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Składniki:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Lista składników -->
+        <TextView
+            android:id="@+id/randomRecipeIngredientsTextView"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sposób przygotowania:"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:id="@+id/randomRecipeInstructionsTextView"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fetchRandomRecipeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Losuj ponownie"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveRecipeButton"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="?attr/colorSecondary"
+            android:text="Zapisz przepis"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>
+

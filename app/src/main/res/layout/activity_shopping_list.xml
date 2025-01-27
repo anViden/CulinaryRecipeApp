@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/paper_texture" >
+
+    <TextView
+        android:id="@+id/shoppingListHeader"
+        style="@style/HeaderStyle"
+        android:backgroundTint="@color/green"
+        android:text="Lista Zakupów" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/shoppingListRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/confirmButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zatwierdź listę zakupów"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

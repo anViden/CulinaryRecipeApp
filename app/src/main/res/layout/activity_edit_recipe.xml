@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/paper_texture" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".EditRecipeActivity">
+
+        <TextView
+            android:id="@+id/editRecipeHeader"
+            style="@style/HeaderStyle"
+            android:text="Edytuj Przepis" />
+
+        <EditText
+            android:id="@+id/recipeNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nazwa przepisu" />
+
+        <EditText
+            android:id="@+id/recipeIngredientsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Składniki" />
+
+        <EditText
+            android:id="@+id/recipeInstructionsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Instrukcje" />
+
+        <ImageView
+            android:id="@+id/editRecipeImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_marginTop="16dp"/>
+
+        <Button
+            android:id="@+id/editTakePhotoButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zrób zdjęcie"
+            android:backgroundTint="?attr/colorPrimary"
+            android:layout_marginTop="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/saveRecipeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zapisz przepis"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:backgroundTint="?attr/colorSecondary"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>
+
